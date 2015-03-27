@@ -1,0 +1,49 @@
+body {
+	background: #ccc;
+	font-family: $font-family;
+}
+
+//Entry info
+
+.article {
+	.entry-header {
+	h1 {
+	font-family:"Helvetica";
+	}
+	}
+	}
+	
+	a {
+		background:#21D8A2;
+		color: #fff;
+		
+		&:hover {
+			background: #336699;
+		}
+	}
+	
+.button {
+	border: 1px solid #000;
+	color: #336699;
+	padding: 1em;
+}
+
+.welcome {
+@extend .button;
+color:#ccc;
+}
+
+.entry-content {
+	background: #336699;
+	padding: 1em;	
+}
+
+.entry-footer {
+	@extend .entry-content;	
+	border: 1px dashed #000;
+}
+
+//Mixins
+body {
+	@include font-size(22px);
+}
